@@ -2,6 +2,7 @@
   "name": "task-invoker",
   "version": "1.0.0",
   "description": "Zero delay task scheduler",
+  "private": false,
   "main": "dist/index.js",
   "module": "dist/mylib.esm.js",
   "typings": "dist/index.d.ts",
