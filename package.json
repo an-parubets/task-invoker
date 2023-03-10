@@ -1,0 +1,53 @@
+{
+  "name": "task-invoker",
+  "version": "1.0.0",
+  "description": "Zero delay task scheduler",
+  "main": "dist/index.js",
+  "module": "dist/mylib.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "dts build",
+    "lint": "dts lint",
+    "prepare": "husky install && dts build",
+    "start": "dts watch",
+    "test": "dts test --passWithNoTests",
+    "husky": "husky"
+  },
+  "engines": {
+    "node": "^14.18.0 || >=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/an-parubets/task-invoker.git"
+  },
+  "author": "an-parubets",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/an-parubets/task-invoker/issues"
+  },
+  "homepage": "https://github.com/an-parubets/task-invoker#readme",
+  "keywords": [
+    "task invoker",
+    "task scheduler",
+    "scheduler",
+    "js scheduler"
+  ],
+  "devDependencies": {
+    "dts-cli": "^1.6.3",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.0",
+    "prettier": "^2.8.4"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write"
+    ]
+  }
+}
