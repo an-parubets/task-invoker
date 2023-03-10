@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/an-parubets/task-invoker/compare/v1.0.0...v1.0.1) (2023-03-10)
+
+
+### Bug Fixes
+
+* add small readme ([9172781](https://github.com/an-parubets/task-invoker/commit/9172781375cef606e12340f426e0860ab2fa772d))
+
 # 1.0.0 (2023-03-10)
 
 
