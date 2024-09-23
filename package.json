@@ -4,7 +4,7 @@
   "description": "Zero delay task scheduler",
   "private": false,
   "main": "dist/index.js",
-  "module": "dist/mylib.esm.js",
+  "module": "dist/task-invoker.esm.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist"
