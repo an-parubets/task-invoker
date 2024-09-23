@@ -1,6 +1,6 @@
 {
   "name": "task-invoker",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Zero delay task scheduler",
   "private": false,
   "main": "dist/index.js",

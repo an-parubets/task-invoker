@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/an-parubets/task-invoker/compare/v1.0.2...v1.0.3) (2024-09-23)
+
+
+### Bug Fixes
+
+* module name ([83ef27b](https://github.com/an-parubets/task-invoker/commit/83ef27b68ac7085033db0e937f0e232b13ff4eb4))
+
 ## [1.0.2](https://github.com/an-parubets/task-invoker/compare/v1.0.1...v1.0.2) (2023-03-10)
 
 
