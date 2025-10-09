@@ -1,20 +1,20 @@
 # task-invoker
 
-A tiny TypeScript/JavaScript utility for scheduling asynchronous task execution with zero delay.
-Perfect for deferring function calls to the event loop without using setTimeout(fn, 0).
+A tiny TypeScript/JavaScript utility for scheduling asynchronous task execution with **zero delay**.  
+Perfect for deferring function calls to the event loop without using `setTimeout(fn, 0)`.
 
 [![npm version](https://img.shields.io/npm/v/task-invoker.svg?style=flat-square)](https://www.npmjs.com/package/task-invoker)  
 [![npm downloads](https://img.shields.io/npm/dm/task-invoker.svg?style=flat-square)](https://www.npmjs.com/package/task-invoker)  
-[![semantic release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square)](https://github.com/semantic-release/semantic-release)  
 [![license](https://img.shields.io/npm/l/task-invoker.svg?style=flat-square)](./LICENSE)
 
 ---
 
 ## ✨ Features
 
-- 🌀 Run tasks asynchronously with **zero delay**
-- ⚡ Lightweight and dependency-free
-- 🛡️ Written in TypeScript with type definitions
+- 🌀 Run tasks asynchronously with **zero delay**  
+- ⚡ Lightweight and dependency-free  
+- 🛡️ Written in TypeScript with type definitions  
+- 🔄 Works in both **Node.js** and **browser** environments
 
 ---
 
@@ -45,11 +45,23 @@ schedule(foo);
 console.log('This will log first.');
 ```
 
+### With Arguments
+
+```ts
+import { schedule } from 'task-invoker';
+
+const greet = (name: string) => {
+  console.log(`Hello, ${name}!`);
+};
+
+schedule(greet, 'Anatolii');
+```
+
 ---
 
 ## 🛠️ How it Works
 
-`task-invoker` leverages microtask or macrotask scheduling to queue your function for execution after the current call stack clears — without introducing unnecessary delays.
+`task-invoker` leverages microtask or macrotask scheduling (depending on environment) to queue your function for execution after the current call stack clears — without introducing unnecessary delays.
 
 This means:
 - No need for `setTimeout(fn, 0)`
@@ -60,10 +72,11 @@ This means:
 
 ## 📚 API
 
-### `schedule(fn: (...args: any[]) => void): void`
+### `schedule(fn: (...args: any[]) => void, ...args: any[]): void`
 
-Schedules a function to run asynchronously.
-- `fn` — function to execute
+Schedules a function to run asynchronously.  
+- `fn` — function to execute  
+- `...args` — optional arguments to pass into `fn`
 
 ---
 
@@ -92,10 +105,10 @@ schedule(() => {
 ## 🔗 Links
 
 - [npm package](https://www.npmjs.com/package/task-invoker)
-- [GitHub repository](https://github.com/an-parubets/task-invoker)
+- [GitHub repository](https://github.com/<your-username>/task-invoker)
 
 ---
 
 ## 📜 License
 
-MIT © [Anatolii Parubets](https://github.com/an-parubets)
+MIT © [Anatolii Parubets](https://github.com/<your-username>)
