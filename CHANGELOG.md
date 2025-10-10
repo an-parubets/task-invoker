@@ -1,3 +1,11 @@
+# [1.1.0](https://github.com/an-parubets/task-invoker/compare/v1.0.3...v1.1.0) (2025-10-10)
+
+
+### Features
+
+* update docs ([849c0af](https://github.com/an-parubets/task-invoker/commit/849c0afece8fa8ecc50acdad3609e234da6ee1b5))
+* update docs ([64a80f3](https://github.com/an-parubets/task-invoker/commit/64a80f37fd0c8d056fabca3022e0d78f6a5434fb))
+
 ## [1.0.3](https://github.com/an-parubets/task-invoker/compare/v1.0.2...v1.0.3) (2024-09-23)
 
 
